@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_add_lop_hoc"
+    android:layout_margin="16dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/titlAddSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/custom_bg_add_lop_hoc_title"
+        android:gravity="center"
+        android:text="Tạo một sinh viên mới"
+        android:textColor="#FFEA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaSinhVienDialog"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Mã sinh viên: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/titlAddSinhVien"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edtMaSinhVienDialog"
+        android:layout_toRightOf="@+id/tvMaSinhVienDialog"
+        android:layout_below="@+id/titlAddSinhVien"
+        android:inputType="textAutoComplete"
+        android:hint="VD: 001"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tvTenSinhVienDialog"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Tên sinh viên: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvMaSinhVienDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edtTenSinhVienDialog"
+        android:layout_toRightOf="@+id/tvMaSinhVienDialog"
+        android:layout_below="@+id/edtMaSinhVienDialog"
+        android:inputType="textAutoComplete"
+        android:hint="VD: ABC"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:id="@+id/tvNgaySinhDialog"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Ngày sinh: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvTenSinhVienDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edtNgaySinhDialog"
+        android:layout_toRightOf="@+id/tvMaSinhVienDialog"
+        android:layout_below="@+id/edtTenSinhVienDialog"
+        android:inputType="date"
+        android:hint="VD: 2000-01-01"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tvMaLopSinhVienDialog"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Mã lớp: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvNgaySinhDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <Spinner
+        android:id="@+id/spMaLopSinhVienDialog"
+        android:layout_below="@+id/edtNgaySinhDialog"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tvMaLopSinhVienDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTaoSinhVien"
+            android:text="Tạo sinh viên"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnHuySinhVien"
+            android:text="Huỷ"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

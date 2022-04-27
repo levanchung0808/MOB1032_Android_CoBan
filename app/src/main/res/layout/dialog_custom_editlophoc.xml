@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_bg_add_lop_hoc"
+    android:layout_margin="16dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/titlEditLopHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/custom_bg_add_lop_hoc_title"
+        android:gravity="center"
+        android:text="Chỉnh sửa lớp học"
+        android:textColor="#FFEA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivImage_LH"
+        android:src="@drawable/avartar_c"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titlEditLopHoc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:shapeAppearanceOverlay="@style/Circula"/>
+
+    <TextView
+        android:id="@+id/tvMaLopDiaLog"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Mã lớp: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ivImage_LH"
+        android:layout_alignParentLeft="true"
+        android:layout_width="110dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edtEditMaLop"
+        android:layout_toRightOf="@+id/tvMaLopDiaLog"
+        android:layout_below="@+id/ivImage_LH"
+        android:inputType="textAutoComplete"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tvTenLopDiaLog"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMaLopDiaLog"
+        android:layout_marginBottom="134dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên lớp: "
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtEditTenLop"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtEditMaLop"
+        android:padding="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/tvTenLopDiaLog"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="8dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/edtEditTenLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnEditCapNhatLop"
+            android:text="Cập nhật"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnEditHuyLop"
+            android:text="Huỷ"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_item_listview">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar_SV"
+            android:src="@drawable/avatar1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:shapeAppearanceOverlay="@style/Circula"/>
+
+        <ImageView
+            android:id="@+id/ivEditSinhVien"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/ivDeleteSinhVien"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/ivEditSinhVien"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+
+        <TextView
+            android:id="@+id/tvTenSV"
+            android:textColor="@color/purple_700"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/ivAvatar_SV"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/balooda2_bold"
+            android:gravity="left"
+            android:text="Tên sinh viên"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMaSV"
+            android:textColor="@color/purple_500"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvTenSV"
+            android:layout_toRightOf="@+id/ivAvatar_SV"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/balooda2_bold"
+            android:gravity="left"
+            android:text="Mã sinh viên"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvMaLopSinhVien"
+            android:textColor="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvMaSV"
+            android:layout_weight="1"
+            android:fontFamily="@font/balooda2_bold"
+            android:layout_toRightOf="@+id/ivAvatar_SV"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:text="Mã lớp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/custom_bg_add_lop_hoc"
+    android:layout_margin="16dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/titlAddLopHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/custom_bg_add_lop_hoc_title"
+        android:gravity="center"
+        android:text="Tạo một lớp mới"
+        android:textColor="#FFEA00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaLopDiaLog"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Mã lớp: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/titlAddLopHoc"
+        android:layout_alignParentLeft="true"
+        android:layout_width="110dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edtAddMaLop"
+        android:layout_toRightOf="@+id/tvMaLopDiaLog"
+        android:layout_below="@+id/titlAddLopHoc"
+        android:inputType="textAutoComplete"
+        android:hint="VD: CP17100"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tvTenLopDiaLog"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMaLopDiaLog"
+        android:layout_marginBottom="134dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên lớp: "
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtAddTenLop"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtAddMaLop"
+        android:hint="VD: Java"
+        android:padding="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/tvTenLopDiaLog"
+        android:background="@drawable/custom_bg_add_lop_hoc_edittext"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="8dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/edtAddTenLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAddTaoLop"
+            android:text="Tạo lớp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnAddHuyLop"
+            android:text="Huỷ"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
